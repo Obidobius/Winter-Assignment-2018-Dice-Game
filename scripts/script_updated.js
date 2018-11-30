@@ -30,7 +30,7 @@ function createCharacters(characters){
 };
 //no where you call the function here
 
-
+//Test github new line
 //PLAYERS
         // We need to see a character is clicked
         // save the url to local storage
