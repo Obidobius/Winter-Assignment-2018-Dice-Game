@@ -1,0 +1,353 @@
+$pieceWidth:20px;
+$pieceHeight:120px;
+
+body{
+    margin: 0;
+}
+
+#leftSideThirdOne{
+    margin: 0;
+
+}
+#battleText{
+    color:black;
+    font-size: 14px;
+}
+#battleText2{
+    color:black;
+    font-size: 14px;
+}
+#text_field{
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 0px;
+    margin-top: 15px;
+    align-self: center;
+    height: 85px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: #fafafa;
+    color: black;
+    font-size: 17px;
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.8), 0 -3px 9px 0 rgba(0,0,0,0.19);
+}
+//-------------------------------------ID Tags---------------------------------//
+                                    //1st Row
+
+#battleText{
+    color: black;
+}
+#leftSideTopOne{
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 1px solid black;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+#rightSideTop{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+                                    //2nd Row
+#leftSideSecondOne{
+    border-left: 2px solid black;
+    border-right: 1px solid black;
+}
+
+#rightSideSecond{
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+}
+                                    //3rd Row
+#leftSideThirdOne{
+    border-left: 2px solid black;
+}
+#leftSideThirdTwo{
+    border-right: 1px solid black;
+}
+
+#RightSideThird{
+    border-right: 2px solid black;
+
+}
+                                    //4th Row
+#leftSideForthOne{
+    border-left: 2px solid black;
+    border-right: 1px solid black;
+}
+
+#rightSideForth{
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+}
+                                    //5th Row
+#leftSideFifthOne{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 1px solid black;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+#rightSideFifth{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+                                        //PLAYER
+#rightPlayerIcon2{
+    padding-top: 0px;
+    padding-left: 45px;
+    border-right: 1px solid black;
+    border-left: 2px solid black;
+}
+#leftPlayerIcon1{
+    padding-top: 0px;
+    padding-left: 45px;
+    border-right: 1px solid black;
+    border-left: 2px solid black;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+                                        //Goal
+#goal_LeftTop{
+    background-image: url("/icons/goal_2.png");
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    border-top: 3px solid gold;
+    border-left: 3px solid gold;
+    border-top-left-radius: 9px;
+}
+#goal_LeftBottom{
+    background-image: url("/icons/goal_3.png");
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    border-bottom: 3px solid gold;
+    border-left: 3px solid gold;
+    border-bottom-left-radius: 9px;
+}
+#goal_RightBottom{
+    background-image: url("/icons/goal_4.png");
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    border-bottom: 3px solid gold;
+    border-right: 3px solid gold;
+    border-bottom-right-radius: 9px;
+}
+
+
+
+
+//-------------------------------------Class Tags------------------------------//
+
+.iconInput{
+    padding-bottom: 10px !important;
+    font-size: 18px;
+    //text-decoration: underline;
+}
+.selection{
+    padding-top: 19px !important;
+    &__icon{
+        max-height: 90px;
+        max-width: 113px;
+        margin-top: 15px;
+        margin-bottom: -15px;
+        margin-left:-30px;
+
+    }
+}
+.boardGame{
+    margin:0;
+    height: 400px;
+    &__sideBar{
+        
+
+        background-image: url("/images/card_background.jpg");
+        background-size: cover;
+        width: $pieceWidth;
+        height: $pieceHeight;
+    }
+    &__gameBoardEmpty{
+        background-image: url("/icons/roadEmpty.png");
+        background-position: center;
+        background-size: cover;
+        width: $pieceWidth;
+        height: $pieceHeight;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+ 
+    //---------------------------------------Traps---------------------------------//
+    &__death{
+        background-image: url(/icons/trap_death.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        color:white;
+        height: $pieceHeight;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    &__trapPiece{
+        width: 100%;
+        height: $pieceHeight;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    &__trapPiece1{
+        background-image: url(/icons/trap_1.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: $pieceHeight;
+        color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    &__trapPiece2{
+        background-image: url(/icons/trap_2.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: $pieceHeight;
+        color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    &__trapPiece3{
+        background-image: url(/icons/trap_3.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: $pieceHeight;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    &__trapPiece4{
+        background-image: url(/icons/trap_4.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: $pieceHeight;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+   //---------------------------------------Move Tiles---------------------------------//
+    &__boardPieceUp{
+        background-image: url("/icons/roadUp.png");
+        background-position: center;
+        background-size: cover;
+        color: orange;
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    &__boardPieceDown{
+        background-image: url("/icons/roadDown.png");
+        background-position: center;
+        background-size: cover;
+        color: orange;
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    &__boardPieceSide{
+        background-image: url("/icons/roadSide.png");
+        background-position: center;
+        background-size: cover;
+        color: orange;
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    &__boardPieceTurn{
+        background-image: url("/icons/roadTurn.png");
+        background-position: center;
+        background-size: cover;
+        color: orange;
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    &__boardPieceRight{
+        background-image: url("/icons/roadRight.png");
+        background-position: center;
+        background-size: cover;
+        color: orange;
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    &__boardIcon{
+        background-image: url("/images/card_background.jpg");
+        background-size: cover;
+        max-width: $pieceWidth;
+        max-height: $pieceHeight;
+    }
+    &__startPiece{
+        background-image: url("/icons/roadStart.png");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    //---------------------------------------Goal---------------------------------//
+    &__goalEnd{
+        background-image: url("/icons/goal_1.png");
+        background-position: center;
+        background-size: cover;
+        color: white;
+        background-color: black;
+        border-top: 3px solid gold;
+        border-right: 3px solid gold;
+        border-top-right-radius: 9px;
+    }
+}
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+#dicePlacement{
+    text-align: center;
+    display: grid;
+    align-content: center;
+    border-radius: 5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    align-self: center;
+    height: 95px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: #fafafa;
+    color: black;
+    font-size: 70px;
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.8), 0 -3px 9px 0 rgba(0,0,0,0.19);
+    
+}
+.diceCube{
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 9px;
+    margin-top: 15px;
+    min-width: 120px;
+    min-height: 60px;
+    border: 1px black solid;
+}
+.diceCube:hover{
+    color: red;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.19);
+    transform: scale(1.1);
+}

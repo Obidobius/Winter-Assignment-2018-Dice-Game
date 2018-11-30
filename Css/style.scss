@@ -1,0 +1,202 @@
+//-----------------------------VARIABLES------------------------------
+$iconHeigt:200px;
+$iconWidth:245px;
+$logoColor:red;
+$headLinerColor:#f4b342;
+@font-face {
+    font-family: Game of martin;
+    src: url(../font/Game_of_Thrones.woff2);
+}
+
+//-------------------------------MOBILE-------------------------------
+body{
+    background-image: url("/images/bakgroundImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+p{
+    color: white;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.row{
+    margin: 0 !important;
+}
+#creationPage {
+    background-color:darkolivegreen;
+}
+
+#gotLogo{
+    width:250px;
+    height:210px;
+}
+.card{
+    background-image: url("/images/card_background.jpg");
+    background-size: cover;
+    background-repeat: repeat;  
+    width: 53rem;
+    margin-bottom: 40px;
+    padding: 4px;
+    border: groove silver 4px !important;
+    border-radius: 9px !important;
+}
+
+.container{
+    top: 50px;
+    padding-top:20px !important;
+    text-align: center;
+    border-radius: 9px;
+    &--mainTitle{
+        
+        text-decoration: underline;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+        font-family: "Game of martin";
+        font-size: 2.3rem;
+        color: #f4b342;
+    }
+    &--subTitle{
+        color: black;
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+
+}
+.card-body{
+    margin: 0;
+    padding: 2px !important;
+    &__characterTitle{
+        color: white;
+        font-family: 'Playfair Display SC', serif;
+        min-height: 50px;
+    }
+}
+.selection{
+    padding-top: 9px !important;
+    align-content: center;
+    background-image: cover;
+    background-origin: content-box;
+    background-position: center;
+    &__icon{
+        height: $iconHeigt;
+        width: $iconWidth;
+        align-self: center;
+        align-content: center;
+    }
+    &--selectButton{
+        font-family: 'Playfair Display SC', serif;
+        background-color: white;
+        color: black;
+        padding: 15px 32px;
+        border-radius: 4px;
+        border: black solid 1px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: default;
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    &--selectButton:active{
+        color: black;
+        background-color: #fafafa;
+    }
+    &__characterInfo{
+        text-align: left;
+        padding-left: 4px;
+        color:black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px !important;
+    }
+}
+
+//-----------------------------------ID TAGS----------------------------------------//
+#startButtonContainer{
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+#startButton{
+    font-family: 'Playfair Display SC', serif;
+    background-color: rgb(218, 102, 7);
+    color: white;
+    width: 300px;
+    padding: 15px 32px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: default;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+//----------------------------------DESKTOP-----------------------------------------//
+@media (min-width: 576px) {
+
+
+.selection{
+    padding-top: 9px !important;
+    align-content: center;
+    max-width: 16rem;
+    &--selectButton:hover{
+        font-family: 'Playfair Display SC', serif;
+        background-color:darkred;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        //font-size: 18px;
+        margin: 4px 2px;
+        cursor: pointer;
+       transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        transform: scale(1.1);
+    }
+    &__characterInfo{
+        font-size: 12px;
+        min-height: 120px;
+    }
+}
+
+    .container{
+        padding-top:4rem;
+        text-align: center;
+        min-height:800px;
+        &--mainTitle{
+            font-size: 3rem;
+            color: #f4b342;
+        }
+    }
+    .card{
+        width: 22rem;
+        padding: 4px;
+        margin: 4px;
+        padding-top: 40px;
+    }
+    .row{
+        margin: 0 !important;
+        justify-content: center;
+    }
+
+}
+
+#startButton:hover{
+        font-family: 'Playfair Display SC', serif;
+        background-color:darkred;
+        color: black;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        transform: scale(1.1);
+}
+
+#contains{
+    padding-bottom: 10px;
+}

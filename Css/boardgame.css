@@ -1,0 +1,376 @@
+body {
+  margin: 0;
+}
+
+#leftSideThirdOne {
+  margin: 0;
+}
+
+#battleText {
+  color: black;
+  font-size: 14px;
+}
+
+#battleText2 {
+  color: black;
+  font-size: 14px;
+}
+
+#text_field {
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 0px;
+  margin-top: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 85px;
+  width: 150px;
+  border: 1px solid black;
+  background-color: #fafafa;
+  color: black;
+  font-size: 17px;
+  -webkit-box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.8), 0 -3px 9px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.8), 0 -3px 9px 0 rgba(0, 0, 0, 0.19);
+}
+
+#battleText {
+  color: black;
+}
+
+#leftSideTopOne {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 1px solid black;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+#rightSideTop {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 1px solid black;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+#leftSideSecondOne {
+  border-left: 2px solid black;
+  border-right: 1px solid black;
+}
+
+#rightSideSecond {
+  border-right: 2px solid black;
+  border-left: 1px solid black;
+}
+
+#leftSideThirdOne {
+  border-left: 2px solid black;
+}
+
+#leftSideThirdTwo {
+  border-right: 1px solid black;
+}
+
+#RightSideThird {
+  border-right: 2px solid black;
+}
+
+#leftSideForthOne {
+  border-left: 2px solid black;
+  border-right: 1px solid black;
+}
+
+#rightSideForth {
+  border-right: 2px solid black;
+  border-left: 1px solid black;
+}
+
+#leftSideFifthOne {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 1px solid black;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+#rightSideFifth {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 1px solid black;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+#rightPlayerIcon2 {
+  padding-top: 0px;
+  padding-left: 45px;
+  border-right: 1px solid black;
+  border-left: 2px solid black;
+}
+
+#leftPlayerIcon1 {
+  padding-top: 0px;
+  padding-left: 45px;
+  border-right: 1px solid black;
+  border-left: 2px solid black;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+#goal_LeftTop {
+  background-image: url("/icons/goal_2.png");
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  border-top: 3px solid gold;
+  border-left: 3px solid gold;
+  border-top-left-radius: 9px;
+}
+
+#goal_LeftBottom {
+  background-image: url("/icons/goal_3.png");
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  border-bottom: 3px solid gold;
+  border-left: 3px solid gold;
+  border-bottom-left-radius: 9px;
+}
+
+#goal_RightBottom {
+  background-image: url("/icons/goal_4.png");
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  border-bottom: 3px solid gold;
+  border-right: 3px solid gold;
+  border-bottom-right-radius: 9px;
+}
+
+.iconInput {
+  padding-bottom: 10px !important;
+  font-size: 18px;
+}
+
+.selection {
+  padding-top: 19px !important;
+}
+
+.selection__icon {
+  max-height: 90px;
+  max-width: 113px;
+  margin-top: 15px;
+  margin-bottom: -15px;
+  margin-left: -30px;
+}
+
+.boardGame {
+  margin: 0;
+  height: 400px;
+}
+
+.boardGame__sideBar {
+  background-image: url("/images/card_background.jpg");
+  background-size: cover;
+  width: 20px;
+  height: 120px;
+}
+
+.boardGame__gameBoardEmpty {
+  background-image: url("/icons/roadEmpty.png");
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__death {
+  background-image: url(/icons/trap_death.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: white;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__trapPiece {
+  width: 100%;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__trapPiece1 {
+  background-image: url(/icons/trap_1.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__trapPiece2 {
+  background-image: url(/icons/trap_2.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__trapPiece3 {
+  background-image: url(/icons/trap_3.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__trapPiece4 {
+  background-image: url(/icons/trap_4.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__boardPieceUp {
+  background-image: url("/icons/roadUp.png");
+  background-position: center;
+  background-size: cover;
+  color: orange;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__boardPieceDown {
+  background-image: url("/icons/roadDown.png");
+  background-position: center;
+  background-size: cover;
+  color: orange;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__boardPieceSide {
+  background-image: url("/icons/roadSide.png");
+  background-position: center;
+  background-size: cover;
+  color: orange;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__boardPieceTurn {
+  background-image: url("/icons/roadTurn.png");
+  background-position: center;
+  background-size: cover;
+  color: orange;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__boardPieceRight {
+  background-image: url("/icons/roadRight.png");
+  background-position: center;
+  background-size: cover;
+  color: orange;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__boardIcon {
+  background-image: url("/images/card_background.jpg");
+  background-size: cover;
+  max-width: 20px;
+  max-height: 120px;
+}
+
+.boardGame__startPiece {
+  background-image: url("/icons/roadStart.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.boardGame__goalEnd {
+  background-image: url("/icons/goal_1.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  background-color: black;
+  border-top: 3px solid gold;
+  border-right: 3px solid gold;
+  border-top-right-radius: 9px;
+}
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+#dicePlacement {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 5px;
+  padding-top: 0px;
+  margin-top: 0px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  height: 95px;
+  width: 150px;
+  border: 1px solid black;
+  background-color: #fafafa;
+  color: black;
+  font-size: 70px;
+  -webkit-box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.8), 0 -3px 9px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.8), 0 -3px 9px 0 rgba(0, 0, 0, 0.19);
+}
+
+.diceCube {
+  -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 9px;
+  margin-top: 15px;
+  min-width: 120px;
+  min-height: 60px;
+  border: 1px black solid;
+}
+
+.diceCube:hover {
+  color: red;
+  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=boardgame.css.map */
