@@ -41,11 +41,11 @@ p{
         left: 50%;
         transform: translate(-50%, -300px);
         text-decoration: underline;
-        padding-top: 20px;
+        padding-top: 15px;
         padding-bottom: 20px;
         margin: 0;
         font-family: "Game of martin";
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         color: #f4b342;
     }
 }
@@ -389,9 +389,8 @@ p{
 canvas{
     border: 1px solid black;
     background-color: white;
-    height: 560px;
-    width: 1200px;
-
+    //height: 560px;
+    //width: 1200px;
 }
 #leftSide_Winner{
     background-image: url("../images/card_background.jpg");
