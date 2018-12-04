@@ -3,7 +3,7 @@ $pieceHeight:120px;
 
 body{
     margin: 0;
-    background-image: url("./images/bakgroundImage.jpg");
+    background-image: url("../images/bakgroundImage.jpg");
     background-size: 1650px !important;
     background-repeat: no-repeat;
     padding-bottom: 60px !important;
@@ -50,8 +50,6 @@ p{
     }
 }
 
-    
-    
 #leftSideThirdOne{
     margin: 0;
 
@@ -158,7 +156,7 @@ p{
 }
                                         //Goal
 #goal_LeftTop{
-    background-image: url("./icons/goal_2.png");
+    background-image: url("../icons/goal_2.png");
     background-position: center;
     background-size: cover;
     background-color: black;
@@ -167,7 +165,7 @@ p{
     border-top-left-radius: 9px;
 }
 #goal_LeftBottom{
-    background-image: url("./icons/goal_3.png");
+    background-image: url("../icons/goal_3.png");
     background-position: center;
     background-size: cover;
     background-color: black;
@@ -176,7 +174,7 @@ p{
     border-bottom-left-radius: 9px;
 }
 #goal_RightBottom{
-    background-image: url("./icons/goal_4.png");
+    background-image: url("../icons/goal_4.png");
     background-position: center;
     background-size: cover;
     background-color: black;
@@ -205,13 +203,13 @@ p{
     margin:0;
     height: 400px;
     &__sideBar{
-        background-image: url("./images/card_background.jpg");
+        background-image: url("../images/card_background.jpg");
         background-size: cover;
         width: $pieceWidth;
         height: $pieceHeight;
     }
     &__gameBoardEmpty{
-        background-image: url("./icons/roadEmpty.png");
+        background-image: url("../icons/roadEmpty.png");
         background-position: center;
         background-size: cover;
         width: $pieceWidth;
@@ -221,7 +219,7 @@ p{
     }
     //---------------------------------------Traps---------------------------------//
     &__death{
-        background-image: url("./icons/trap_death.png");
+        background-image: url("../icons/trap_death.png");
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -237,7 +235,7 @@ p{
         border-radius: 10px;
     }
     &__trapPiece1{
-        background-image: url("./icons/trap_1.png");
+        background-image: url("../icons/trap_1.png");
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -247,7 +245,7 @@ p{
         border-radius: 10px;
     }
     &__trapPiece2{
-        background-image: url("./icons/trap_2.png");
+        background-image: url("../icons/trap_2.png");
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -257,7 +255,7 @@ p{
         border-radius: 10px;
     }
     &__trapPiece3{
-        background-image: url("./icons/trap_3.png");
+        background-image: url("../icons/trap_3.png");
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -266,7 +264,7 @@ p{
         border-radius: 10px;
     }
     &__trapPiece4{
-        background-image: url("./icons/trap_4.png");
+        background-image: url("../icons/trap_4.png");
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -276,7 +274,7 @@ p{
     }
    //---------------------------------------Move Tiles---------------------------------//
     &__boardPieceUp{
-        background-image: url("./icons/roadUp.png");
+        background-image: url("../icons/roadUp.png");
         background-position: center;
         background-size: cover;
         color: orange;
@@ -286,7 +284,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceDown{
-        background-image: url("./icons/roadDown.png");
+        background-image: url("../icons/roadDown.png");
         background-position: center;
         background-size: cover;
         color: orange;
@@ -296,7 +294,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceSide{
-        background-image: url("./icons/roadSide.png");
+        background-image: url("../icons/roadSide.png");
         background-position: center;
         background-size: cover;
         color: orange;
@@ -306,7 +304,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceTurn{
-        background-image: url("./icons/roadTurn.png");
+        background-image: url("../icons/roadTurn.png");
         background-position: center;
         background-size: cover;
         color: orange;
@@ -316,7 +314,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceRight{
-        background-image: url("./icons/roadRight.png");
+        background-image: url("../icons/roadRight.png");
         background-position: center;
         background-size: cover;
         color: orange;
@@ -326,13 +324,13 @@ p{
         border-radius: 10px;
     }
     &__boardIcon{
-        background-image: url("./images/card_background.jpg");
+        background-image: url("../images/card_background.jpg");
         background-size: cover;
         max-width: $pieceWidth;
         max-height: $pieceHeight;
     }
     &__startPiece{
-        background-image: url("./icons/roadStart.png");
+        background-image: url("../icons/roadStart.png");
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -342,7 +340,7 @@ p{
     }
     //---------------------------------------Goal---------------------------------//
     &__goalEnd{
-        background-image: url("./icons/goal_1.png");
+        background-image: url("../icons/goal_1.png");
         background-position: center;
         background-size: cover;
         color: white;
@@ -393,15 +391,16 @@ canvas{
     background-color: white;
     height: 560px;
     width: 1200px;
+
 }
 #leftSide_Winner{
-    background-image: url("./images/card_background.jpg");
+    background-image: url("../images/card_background.jpg");
     background-size: cover;
     border-top-left-radius: 40%;
     border-bottom-left-radius: 40%;
 }
 #rightSide_Winner{
-    background-image: url("./images/card_background.jpg");
+    background-image: url("../images/card_background.jpg");
     background-size: cover;
     border-top-right-radius: 40%;
     border-bottom-right-radius: 40%;
