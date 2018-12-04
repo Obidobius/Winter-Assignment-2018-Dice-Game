@@ -152,7 +152,7 @@ function moveIcons(result) {
             turn = 2
             if (result === 6) {
                 console.log("trigger player 1 dice")
-                alert("player 1 hit 6, roll again!")
+                alert("Player 1 rolls a 6, roll again!")
                 movePiece()
                 turn = 1
             }
@@ -167,7 +167,7 @@ function moveIcons(result) {
             turn = 1
             if (result === 6) {
                 console.log("trigger player 2 dice")
-                alert("player 2 hit 6, roll again!")
+                alert("Player 2 rolls a 6, roll again!")
                 movePiece2()
                 turn = 2
             }
