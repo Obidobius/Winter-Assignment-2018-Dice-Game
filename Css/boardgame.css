@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("/images/bakgroundImage.jpg");
+  background-image: url("./images/bakgroundImage.jpg");
   background-size: 1650px !important;
   background-repeat: no-repeat;
   padding-bottom: 60px !important;
@@ -169,7 +169,7 @@ p {
 }
 
 #goal_LeftTop {
-  background-image: url("/icons/goal_2.png");
+  background-image: url("./icons/goal_2.png");
   background-position: center;
   background-size: cover;
   background-color: black;
@@ -179,7 +179,7 @@ p {
 }
 
 #goal_LeftBottom {
-  background-image: url("/icons/goal_3.png");
+  background-image: url("./icons/goal_3.png");
   background-position: center;
   background-size: cover;
   background-color: black;
@@ -189,7 +189,7 @@ p {
 }
 
 #goal_RightBottom {
-  background-image: url("/icons/goal_4.png");
+  background-image: url("./icons/goal_4.png");
   background-position: center;
   background-size: cover;
   background-color: black;
@@ -221,14 +221,14 @@ p {
 }
 
 .boardGame__sideBar {
-  background-image: url("/images/card_background.jpg");
+  background-image: url("./images/card_background.jpg");
   background-size: cover;
   width: 20px;
   height: 120px;
 }
 
 .boardGame__gameBoardEmpty {
-  background-image: url("/icons/roadEmpty.png");
+  background-image: url("./icons/roadEmpty.png");
   background-position: center;
   background-size: cover;
   width: 20px;
@@ -238,7 +238,7 @@ p {
 }
 
 .boardGame__death {
-  background-image: url(/icons/trap_death.png);
+  background-image: url("./icons/trap_death.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -256,7 +256,7 @@ p {
 }
 
 .boardGame__trapPiece1 {
-  background-image: url(/icons/trap_1.png);
+  background-image: url("./icons/trap_1.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -267,7 +267,7 @@ p {
 }
 
 .boardGame__trapPiece2 {
-  background-image: url(/icons/trap_2.png);
+  background-image: url("./icons/trap_2.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -278,7 +278,7 @@ p {
 }
 
 .boardGame__trapPiece3 {
-  background-image: url(/icons/trap_3.png);
+  background-image: url("./icons/trap_3.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -288,7 +288,7 @@ p {
 }
 
 .boardGame__trapPiece4 {
-  background-image: url(/icons/trap_4.png);
+  background-image: url("./icons/trap_4.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -298,7 +298,7 @@ p {
 }
 
 .boardGame__boardPieceUp {
-  background-image: url("/icons/roadUp.png");
+  background-image: url("./icons/roadUp.png");
   background-position: center;
   background-size: cover;
   color: orange;
@@ -309,7 +309,7 @@ p {
 }
 
 .boardGame__boardPieceDown {
-  background-image: url("/icons/roadDown.png");
+  background-image: url("./icons/roadDown.png");
   background-position: center;
   background-size: cover;
   color: orange;
@@ -320,7 +320,7 @@ p {
 }
 
 .boardGame__boardPieceSide {
-  background-image: url("/icons/roadSide.png");
+  background-image: url("./icons/roadSide.png");
   background-position: center;
   background-size: cover;
   color: orange;
@@ -331,7 +331,7 @@ p {
 }
 
 .boardGame__boardPieceTurn {
-  background-image: url("/icons/roadTurn.png");
+  background-image: url("./icons/roadTurn.png");
   background-position: center;
   background-size: cover;
   color: orange;
@@ -342,7 +342,7 @@ p {
 }
 
 .boardGame__boardPieceRight {
-  background-image: url("/icons/roadRight.png");
+  background-image: url("./icons/roadRight.png");
   background-position: center;
   background-size: cover;
   color: orange;
@@ -353,14 +353,14 @@ p {
 }
 
 .boardGame__boardIcon {
-  background-image: url("/images/card_background.jpg");
+  background-image: url("./images/card_background.jpg");
   background-size: cover;
   max-width: 20px;
   max-height: 120px;
 }
 
 .boardGame__startPiece {
-  background-image: url("/icons/roadStart.png");
+  background-image: url("./icons/roadStart.png");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -370,7 +370,7 @@ p {
 }
 
 .boardGame__goalEnd {
-  background-image: url("/icons/goal_1.png");
+  background-image: url("./icons/goal_1.png");
   background-position: center;
   background-size: cover;
   color: white;
@@ -432,14 +432,14 @@ canvas {
 }
 
 #leftSide_Winner {
-  background-image: url("/images/card_background.jpg");
+  background-image: url("./images/card_background.jpg");
   background-size: cover;
   border-top-left-radius: 40%;
   border-bottom-left-radius: 40%;
 }
 
 #rightSide_Winner {
-  background-image: url("/images/card_background.jpg");
+  background-image: url("./images/card_background.jpg");
   background-size: cover;
   border-top-right-radius: 40%;
   border-bottom-right-radius: 40%;

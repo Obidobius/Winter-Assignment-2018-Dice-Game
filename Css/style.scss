@@ -10,7 +10,7 @@ $headLinerColor:#f4b342;
 
 //-------------------------------MOBILE-------------------------------
 body{
-    background-image: url("/images/bakgroundImage.jpg");
+    background-image: url("./images/bakgroundImage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     }
@@ -32,7 +32,7 @@ p{
     z-index: 100;
 }
 .card{
-    background-image: url("/images/card_background.jpg");
+    background-image: url("./images/card_background.jpg");
     background-size: cover;
     background-repeat: repeat;  
     width: 53rem;
@@ -201,9 +201,7 @@ p{
             z-index: 110 !important;
             transform: translate(42%, -225px) rotate(15deg) !important;
             position: absolute;
-          //  margin-top: -150px;
             color: rgb(161, 33, 33);
-         //   text-shadow: 0 4px 4px  black;
             font-family: 'Gloria Hallelujah', cursive;
             background-color:rgba(255, 255, 255, 0.7);
             padding: 10px;

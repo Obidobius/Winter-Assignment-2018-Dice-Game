@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("/images/bakgroundImage.jpg");
+  background-image: url("./images/bakgroundImage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -29,7 +29,7 @@ p {
 }
 
 .card {
-  background-image: url("/images/card_background.jpg");
+  background-image: url("./images/card_background.jpg");
   background-size: cover;
   background-repeat: repeat;
   width: 53rem;
