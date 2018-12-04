@@ -1,5 +1,55 @@
 body {
   margin: 0;
+  background-image: url("/images/bakgroundImage.jpg");
+  background-size: 1650px !important;
+  background-repeat: no-repeat;
+  padding-bottom: 60px !important;
+}
+
+p {
+  color: white;
+  font-family: 'Playfair Display SC', serif;
+}
+
+#gotLogo {
+  width: 250px !important;
+  height: 210px !important;
+  z-index: 100;
+}
+
+.container {
+  top: 50px;
+  padding-top: 20px !important;
+  text-align: center;
+  border-radius: 9px;
+}
+
+.container--subTitle {
+  font-size: 20px;
+  z-index: 110 !important;
+  -webkit-transform: translate(120%, -120px) rotate(15deg) !important;
+          transform: translate(120%, -120px) rotate(15deg) !important;
+  position: absolute;
+  color: #a12121;
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+
+.container--mainTitle {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -300px);
+          transform: translate(-50%, -300px);
+  text-decoration: underline;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  font-family: "Game of martin";
+  font-size: 2.2rem;
+  color: #f4b342;
 }
 
 #leftSideThirdOne {
@@ -372,5 +422,26 @@ body {
           box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+canvas {
+  border: 1px solid black;
+  background-color: white;
+  height: 560px;
+  width: 1200px;
+}
+
+#leftSide_Winner {
+  background-image: url("/images/card_background.jpg");
+  background-size: cover;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+}
+
+#rightSide_Winner {
+  background-image: url("/images/card_background.jpg");
+  background-size: cover;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
 }
 /*# sourceMappingURL=boardgame.css.map */
