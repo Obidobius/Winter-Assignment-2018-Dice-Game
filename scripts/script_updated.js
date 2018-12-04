@@ -18,13 +18,13 @@ function createCharacters(characters){
                 '<img class="[ selection__icon ]" src="icons/'+ [i] +'.png" />'+
                 "<h5 class='card-title [ card-body__characterTitle ]'> name: "+ characters[i].aliases[0] +"</h5>" +
                 '<p> gender: '+ characters[i].gender +'</p>' +
-                "<div><button class='[ selection--selectButton ]' onclick='selectCharacter(\"" + characters[i].aliases + "\", " + i + ")'>Select</button></div>"+
+                "<div><button class='[ selection--selectButton ]' onclick='selectCharacter(" + i + ")'>Select</button></div>"+
             '</div>'
         '</div>';
         cardContainer.innerHTML += characterCard;
     }
 };
-function selectCharacter(aliases, id){
+function selectCharacter(id){
     if(counter < 2){
         counter++;
         if(counter === 1 ) {
