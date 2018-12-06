@@ -1,24 +1,19 @@
-var winner = localStorage.getItem('player_01_id');
+var winner1 = localStorage.getItem('player_01_id');
 var winner2 = localStorage.getItem('player_02_id');
 var collect = document.getElementsByClassName("winner");
 
 
-function showWinner(){
-    if(winner === localStorage.getItem('player_01_id')){
+function showWinner(winner){
+    if(winner1 === localStorage.getItem('player_01_id')){
         let collect = document.getElementById("winner");
         collect.innerHTML = '<img src="../icons/' + localStorage.getItem("Player_1_id") + '.png" />' + "Player One Won";
+    }
+    else{
+        let collect = document.getElementById("winner");
         collect.innerHTML = '<img src="../icons/' + localStorage.getItem("Player_2_id") + '.png" />' + "Player Two Won";
-        console.log("i am player one");
     }
 };
 
-
-//if(localStorage.getItem("Player_1_id")){
-//    collect.innerHTML = '<img src="../icons/' + localStorage.getItem("Player_1_id") + '.png" />' + "Player One Won";
-//}
-//else{
-//collect.innerHTML = '<img src="../icons/' + localStorage.getItem("Player_2_id") + '.png" />' + "Player Two Won";
-//}
 
 function draw() {
     var canvas = document.getElementById('canvasPlace')

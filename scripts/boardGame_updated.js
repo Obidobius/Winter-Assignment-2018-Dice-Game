@@ -148,7 +148,6 @@ function moveIcons(result) {
             tile = tile + 1;
         }
         movePiece()
-      
         if (!pDeath2) {
             turn = 2
             if (result === 6) {
@@ -187,9 +186,7 @@ function showTiles() {
     else {
         inText.innerHTML = "Player 2 moved to tile: " + tile2;
     }
-
 };
-
 
 
                 //-----------------7. Direct Winner to new Page----------------//
@@ -206,7 +203,6 @@ function winner(result) {
     //    localstorage.setItem('WinnerImage', '1.png')
         window.location.href = "success_Page.html";
     }
-
 };
 
 
