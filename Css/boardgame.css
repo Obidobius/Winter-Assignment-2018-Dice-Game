@@ -451,4 +451,34 @@ canvas {
   border-top-right-radius: 40%;
   border-bottom-right-radius: 40%;
 }
+
+#winner {
+  background-image: url("../images/ThroneImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center !important;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center !important;
+      align-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  justify-items: center !important;
+}
+
+#playerTwo {
+  max-height: 300px;
+  padding: 0px;
+}
+
+#playerOne {
+  max-height: 300px;
+  padding: 0px;
+}
+
+.win {
+  font-size: 50px;
+  color: red !important;
+}
 /*# sourceMappingURL=boardgame.css.map */
