@@ -1,10 +1,11 @@
 $pieceWidth:20px;
 $pieceHeight:120px;
+$boardHeight:120px;
 
 body{
     margin: 0;
     background-image: url("../images/bakgroundImage.jpg");
-    background-size: 1650px !important;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 60px !important;
 }
@@ -37,9 +38,8 @@ p{
     &--mainTitle{
         z-index: 1;
         position: absolute;
-        top: 50%;
         left: 50%;
-        transform: translate(-50%, -300px);
+        transform: translate(-50%, -145px);
         text-decoration: underline;
         padding-top: 15px;
         padding-bottom: 20px;
@@ -55,10 +55,6 @@ p{
 
 }
 #battleText{
-    color:black;
-    font-size: 14px;
-}
-#battleText2{
     color:black;
     font-size: 14px;
 }
@@ -187,7 +183,6 @@ p{
 .iconInput{
     padding-bottom: 10px !important;
     font-size: 18px;
-    //text-decoration: underline;
 }
 .selection{
     padding-top: 19px !important;
@@ -203,12 +198,14 @@ p{
     margin:0;
     height: 400px;
     &__sideBar{
+        max-height: $boardHeight;
         background-image: url("../images/card_background.jpg");
         background-size: cover;
         width: $pieceWidth;
         height: $pieceHeight;
     }
     &__gameBoardEmpty{
+        max-height: $boardHeight;
         background-image: url("../icons/roadEmpty.png");
         background-position: center;
         background-size: cover;
@@ -219,6 +216,7 @@ p{
     }
     //---------------------------------------Traps---------------------------------//
     &__death{
+        max-height: $boardHeight;
         background-image: url("../icons/trap_death.png");
         background-size: cover;
         background-position: center;
@@ -229,12 +227,14 @@ p{
         border-radius: 10px;
     }
     &__trapPiece{
+        max-height: $boardHeight;
         width: 100%;
         height: $pieceHeight;
         border: 1px solid black;
         border-radius: 10px;
     }
     &__trapPiece1{
+        max-height: $boardHeight;
         background-image: url("../icons/trap_1.png");
         background-size: cover;
         background-position: center;
@@ -245,6 +245,7 @@ p{
         border-radius: 10px;
     }
     &__trapPiece2{
+        max-height: $boardHeight;
         background-image: url("../icons/trap_2.png");
         background-size: cover;
         background-position: center;
@@ -255,6 +256,7 @@ p{
         border-radius: 10px;
     }
     &__trapPiece3{
+        max-height: $boardHeight;
         background-image: url("../icons/trap_3.png");
         background-size: cover;
         background-position: center;
@@ -264,6 +266,7 @@ p{
         border-radius: 10px;
     }
     &__trapPiece4{
+        max-height: $boardHeight;
         background-image: url("../icons/trap_4.png");
         background-size: cover;
         background-position: center;
@@ -274,6 +277,7 @@ p{
     }
    //---------------------------------------Move Tiles---------------------------------//
     &__boardPieceUp{
+        max-height: $boardHeight;
         background-image: url("../icons/roadUp.png");
         background-position: center;
         background-size: cover;
@@ -284,6 +288,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceDown{
+        max-height: $boardHeight;
         background-image: url("../icons/roadDown.png");
         background-position: center;
         background-size: cover;
@@ -294,6 +299,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceSide{
+        max-height: $boardHeight;
         background-image: url("../icons/roadSide.png");
         background-position: center;
         background-size: cover;
@@ -304,6 +310,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceTurn{
+        max-height: $boardHeight;
         background-image: url("../icons/roadTurn.png");
         background-position: center;
         background-size: cover;
@@ -314,6 +321,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceRight{
+        max-height: $boardHeight;
         background-image: url("../icons/roadRight.png");
         background-position: center;
         background-size: cover;
@@ -324,12 +332,14 @@ p{
         border-radius: 10px;
     }
     &__boardIcon{
+        max-height: $boardHeight;
         background-image: url("../images/card_background.jpg");
         background-size: cover;
         max-width: $pieceWidth;
         max-height: $pieceHeight;
     }
     &__startPiece{
+        max-height: $boardHeight;
         background-image: url("../icons/roadStart.png");
         background-position: center;
         background-size: cover;

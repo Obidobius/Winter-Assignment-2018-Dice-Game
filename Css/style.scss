@@ -60,9 +60,8 @@ p{
     &--mainTitle{
         z-index: 1;
         position: absolute;
-        top: 50%;
         left: 50%;
-        transform: translate(-50%, -280px);
+        transform: translate(-50%, -250px);
         text-decoration: underline;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -71,8 +70,6 @@ p{
         font-size: 3.2rem;
         color: #f4b342;
     }
-
-    
 }
 .card-body{
     margin: 0;
@@ -183,15 +180,13 @@ p{
         text-align: center;
         min-height:800px;
         &--mainTitle{
-            z-index: 1;
+            z-index: 109;
             position: absolute;
-            top: 50%;
             left: 50%;
-            transform: translate(-50%, -220px);
+            transform: translate(-50%, -263px);
             text-decoration: underline;
             padding-top: 20px;
             padding-bottom: 20px;
-            margin: 0;
             font-family: "Game of martin";
             font-size: 3.6rem;
             color: #f4b342;
@@ -201,9 +196,7 @@ p{
             z-index: 110 !important;
             transform: translate(42%, -225px) rotate(15deg) !important;
             position: absolute;
-          //  margin-top: -150px;
             color: rgb(161, 33, 33);
-         //   text-shadow: 0 4px 4px  black;
             font-family: 'Gloria Hallelujah', cursive;
             background-color:rgba(255, 255, 255, 0.7);
             padding: 10px;

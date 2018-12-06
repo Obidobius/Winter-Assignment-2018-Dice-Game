@@ -83,7 +83,7 @@ function movePiece() {
             alert("A rockslide triggers above you, you run back 4 tiles");
         }
         else if (tile === 29) {
-            tile = tile - 28;
+            tile = tile - 29;
             pDeath1 = true;
             alert("A White walker appears, you die a terrible death and become one of them!");
         }
@@ -122,7 +122,7 @@ function movePiece2() {
             alert("A rockslide triggers above you, you run back 4 tiles");
         }
         else if (tile2 === 29) {
-            tile2 = tile2 - 28;
+            tile2 = tile2 - 29;
             pDeath2 = true;
             alert("A White walker appears, you die a terrible death and become one of them!");
         }
@@ -140,7 +140,7 @@ function movePiece2() {
 
 function moveIcons(result) {
     if (pDeath1 && pDeath2) {
-        alert("Wtf all players are dead");
+        alert("Wtf all players died from the white walkers");
         window.location.href = "allDead.html";
     }
     if (turn === 1) {
@@ -148,16 +148,20 @@ function moveIcons(result) {
             tile = tile + 1;
         }
         movePiece()
+      
         if (!pDeath2) {
             turn = 2
             if (result === 6) {
-                console.log("trigger player 1 dice")
                 alert("Player 1 rolls a 6, roll again!")
                 movePiece()
                 turn = 1
             }
         }
+        if(pDeath1 === true){
+            turn =2
+        }
     }
+    //Player 2
     else if (turn === 2) {
         for (let i = 0; i < result; i++) {
             tile2 = tile2 + 1;
@@ -166,7 +170,6 @@ function moveIcons(result) {
         if (!pDeath1) {
             turn = 1
             if (result === 6) {
-                console.log("trigger player 2 dice")
                 alert("Player 2 rolls a 6, roll again!")
                 movePiece2()
                 turn = 2
@@ -187,12 +190,20 @@ function showTiles() {
 
 };
 
+
+
                 //-----------------7. Direct Winner to new Page----------------//
 function winner(result) {
     if (tile > 29) {
+        localStorage.removeItem('Player_2_id');
         window.location.href = "success_Page.html";
     }
-    else if (tile2 > 29) {
+    else if(tile2 > 29) {
+        localStorage.removeItem('Player_1_id');
         window.location.href = "success_Page.html";
     }
+
 };
+
+
+
