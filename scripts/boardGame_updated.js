@@ -196,10 +196,14 @@ function showTiles() {
 function winner(result) {
     if (tile > 29) {
         localStorage.removeItem('Player_2_id');
+   //     localStorage.setItem('<img class="[ selection__icon ]" src="icons/' + localStorage.getItem("Player_1_id") + '.png" />');
+   //     localstorage.setItem('WinnerImage', '1.png')
         window.location.href = "success_Page.html";
     }
     else if(tile2 > 29) {
         localStorage.removeItem('Player_1_id');
+    //    localStorage.setItem('<img class="[ selection__icon ]" src="icons/' + localStorage.getItem("Player_2_id") + '.png" />');
+    //    localstorage.setItem('WinnerImage', '1.png')
         window.location.href = "success_Page.html";
     }
 
