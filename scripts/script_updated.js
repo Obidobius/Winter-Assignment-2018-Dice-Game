@@ -11,7 +11,6 @@ function createCharacters(characters){
     console.log(characters);
     var cardContainer = document.getElementById('characterCardsContainer');
     for(var i = 0; i < characters.length; i++){
-
         var characterCard =
         '<div class=" col-sm-4  card [ selection ]" id=\"' + i + '\">' +
             '<div class="[ col-sm-12 ] card-body">' +

@@ -57,7 +57,8 @@ p {
 
 #battleText {
   color: black;
-  font-size: 14px;
+  padding-top: 10px;
+  font-size: 18px;
 }
 
 #text_field {
@@ -212,6 +213,22 @@ p {
 .boardGame {
   margin: 0;
   height: 400px;
+}
+
+.boardGame__plrOne {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-right: 30px;
+  margin-bottom: -15px;
+}
+
+.boardGame__plrTwo {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-right: 30px;
+  margin-bottom: -15px;
 }
 
 .boardGame__sideBar {
@@ -453,7 +470,7 @@ canvas {
 }
 
 #winner {
-  background-image: url("../images/ThroneImage.png");
+  background-image: url("../icons/Ss_BpcP.png");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center !important;
@@ -468,17 +485,20 @@ canvas {
 }
 
 #playerTwo {
-  max-height: 300px;
-  padding: 0px;
+  max-height: 230px;
+  padding-top: 50px;
+  margin-bottom: -500px;
 }
 
 #playerOne {
-  max-height: 300px;
-  padding: 0px;
+  max-height: 230px;
+  padding: 50px;
+  margin-bottom: -500px;
 }
 
 .win {
   font-size: 50px;
-  color: red !important;
+  color: white;
+  margin-bottom: 90px;
 }
 /*# sourceMappingURL=boardgame.css.map */

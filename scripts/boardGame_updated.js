@@ -13,8 +13,8 @@
 var player1Name = localStorage.getItem('Player 1');
 var player2Name = localStorage.getItem('Player 2');
 
-document.getElementById('leftPlayerIcon1').innerHTML += '<img class="[ selection__icon ]" src="icons/' + localStorage.getItem('Player_1_id') + '.png" />';
-document.getElementById('rightPlayerIcon2').innerHTML += '<img class="[ selection__icon ]" src="icons/' + localStorage.getItem('Player_2_id') + '.png" />';
+document.getElementById('leftPlayerIcon1').innerHTML += '<p class="[ boardGame__plrOne ]">Player One</p>' + '<img class="[ selection__icon ]" src="icons/' + localStorage.getItem('Player_1_id') + '.png" />';
+document.getElementById('rightPlayerIcon2').innerHTML += '<p class ="[ boardGame__plrTwo ]">Player Two</p>' + '<img class="[ selection__icon ]" src="icons/' + localStorage.getItem('Player_2_id') + '.png" />';
 
                                 //-----------------1. VARIABLES-----------------//
 var turn = 1;   //Players Turn
@@ -187,23 +187,14 @@ function showTiles() {
         inText.innerHTML = "Player 2 moved to tile: " + tile2;
     }
 };
-
-
                 //-----------------7. Direct Winner to new Page----------------//
 function winner(result) {
     if (tile > 29) {
         localStorage.removeItem('Player_2_id');
-   //     localStorage.setItem('<img class="[ selection__icon ]" src="icons/' + localStorage.getItem("Player_1_id") + '.png" />');
-   //     localstorage.setItem('WinnerImage', '1.png')
         window.location.href = "success_Page.html";
     }
-    else if(tile2 > 29) {
+    else if (tile2 > 29) {
         localStorage.removeItem('Player_1_id');
-    //    localStorage.setItem('<img class="[ selection__icon ]" src="icons/' + localStorage.getItem("Player_2_id") + '.png" />');
-    //    localstorage.setItem('WinnerImage', '1.png')
         window.location.href = "success_Page.html";
     }
 };
-
-
-

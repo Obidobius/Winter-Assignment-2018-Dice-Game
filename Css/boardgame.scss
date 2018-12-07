@@ -56,7 +56,8 @@ p{
 }
 #battleText{
     color:black;
-    font-size: 14px;
+    padding-top: 10px;
+    font-size: 18px;
 }
 #text_field{
     text-align: center;
@@ -197,6 +198,20 @@ p{
 .boardGame{
     margin:0;
     height: 400px;
+    &__plrOne{
+        text-align: center;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-right: 30px;
+        margin-bottom: -15px;
+    }
+    &__plrTwo{
+        text-align: center;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-right: 30px;
+        margin-bottom: -15px;
+    }
     &__sideBar{
         max-height: $boardHeight;
         background-image: url("../images/card_background.jpg");
@@ -399,8 +414,6 @@ p{
 canvas{
     border: 1px solid black;
     background-color: white;
-    //height: 560px;
-    //width: 1200px;
 }
 #leftSide_Winner{
     background-image: url("../images/card_background.jpg");
@@ -415,7 +428,7 @@ canvas{
     border-bottom-right-radius: 40%;
 }
 #winner{
-    background-image: url("../images/ThroneImage.png");
+    background-image: url("../icons/Ss_BpcP.png");
     background-size: cover;
     background-repeat:no-repeat;
     text-align: center !important;
@@ -425,14 +438,17 @@ canvas{
     justify-items: center !important;
 }
 #playerTwo{
-    max-height: 300px;
-    padding: 0px;
+    max-height: 230px;
+    padding-top: 50px;
+    margin-bottom: -500px;
 }
 #playerOne{
-    max-height: 300px;
-    padding: 0px;
+    max-height: 230px;
+    padding: 50px;
+    margin-bottom: -500px;
 }
 .win{
     font-size: 50px;
-    color: red !important;
+    color: white;
+    margin-bottom: 90px;
 }
