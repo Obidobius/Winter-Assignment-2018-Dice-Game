@@ -34,4 +34,3 @@ function draw() {
   };
 
 draw();
-

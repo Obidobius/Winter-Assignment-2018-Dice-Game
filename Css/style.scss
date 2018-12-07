@@ -47,6 +47,9 @@ p{
     padding-top:20px !important;
     text-align: center;
     border-radius: 9px;
+            &--select{
+            color: white;
+        }
     &--subTitle{
         font-size: 20px;
         z-index: 110 !important;
@@ -165,9 +168,13 @@ p{
         display: inline-block;
         margin: 4px 2px;
         cursor: pointer;
-       transition-duration: 0.4s;
+        transition-duration: 0.4s;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         transform: scale(1.1);
+    }
+    &--selectButton:active{
+        background-color: black;
+        color:rebeccapurple;
     }
     &__characterInfo{
         font-size: 12px;
@@ -179,6 +186,9 @@ p{
         padding-top:4rem;
         text-align: center;
         min-height:800px;
+        &--select{
+            color: white;
+        }
         &--mainTitle{
             z-index: 109;
             position: absolute;

@@ -46,6 +46,10 @@ p {
   border-radius: 9px;
 }
 
+.container--select {
+  color: white;
+}
+
 .container--subTitle {
   font-size: 20px;
   z-index: 110 !important;
@@ -186,6 +190,10 @@ p {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+  .selection--selectButton:active {
+    background-color: black;
+    color: rebeccapurple;
+  }
   .selection__characterInfo {
     font-size: 12px;
     min-height: 120px;
@@ -194,6 +202,9 @@ p {
     padding-top: 4rem;
     text-align: center;
     min-height: 800px;
+  }
+  .container--select {
+    color: white;
   }
   .container--mainTitle {
     z-index: 109;
