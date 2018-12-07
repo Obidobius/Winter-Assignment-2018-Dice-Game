@@ -21,15 +21,15 @@ function draw() {
     var canvas = document.getElementById('canvasPlace')
     var ctx = canvas.getContext('2d');
     canvas.height = 600;
-    canvas.width = 800;
-    ctx.font = '80px Playfair Display SC, serif';
+    canvas.width = 500;
+    ctx.font = '65px georgia, serif';
     ctx.fill = "black";
-    ctx.fillText('Congratulations!', 20, 150);
-    ctx.font = '70px Playfair Display SC, serif';
+    ctx.fillText('Congratulations!', 12, 150);
+    ctx.font = '55px georgia, serif';
     ctx.fill = "black";
-    ctx.fillText('You survived!', 150,250)
-    ctx.font = '35px Playfair Display SC, serif';
-    ctx.fillText('Lets hope George R.R dont kill you later', 15, 530)
+    ctx.fillText('You survived!', 75,250)
+    ctx.font = '26px georgia, serif';
+    ctx.fillText('Lets hope George R.R dont kill you later...', 10, 530)
     
   };
 

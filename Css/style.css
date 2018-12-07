@@ -190,10 +190,6 @@ p {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  .selection--selectButton:active {
-    background-color: black;
-    color: rebeccapurple;
-  }
   .selection__characterInfo {
     font-size: 12px;
     min-height: 120px;
@@ -210,8 +206,8 @@ p {
     z-index: 109;
     position: absolute;
     left: 50%;
-    -webkit-transform: translate(-50%, -305px);
-            transform: translate(-50%, -305px);
+    -webkit-transform: translate(-50%, -290px);
+            transform: translate(-50%, -290px);
     text-decoration: underline;
     padding-top: 20px;
     padding-bottom: 20px;
