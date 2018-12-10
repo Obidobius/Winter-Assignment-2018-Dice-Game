@@ -41,17 +41,45 @@ var roll = {
     }
 };
 
-function showPrint(result) {
-    var dicePlacement = document.getElementById("dicePlacement");
-    dicePlacement.innerHTML = result;
+//function showPrint(result) {
+//    var dicePlacement = document.getElementById("dicePlacement");
+//    dicePlacement.innerHTML = result;
+//};
+
+function showDice(result) {
+    let show = document.getElementById("dicePlacement");
+    switch (result) {
+        case 1:
+            show.innerHTML = "<i class='fas fa-dice-one'></i>";
+            break;
+        case 2:
+            show.innerHTML = "<i class='fas fa-dice-two'></i>";
+            break;
+        case 3:
+            show.innerHTML = "<i class='fas fa-dice-three'></i>";
+            break;
+        case 4:
+            show.innerHTML = "<i class='fas fa-dice-four'></i>";
+            break;
+        case 5:
+            show.innerHTML = "<i class='fas fa-dice-five'></i>";
+            break;
+        case 6:
+            show.innerHTML = "<i class='fas fa-dice-six'></i>";
+            break;
+        default:
+            show.innerHTML = "<i class='fas fa-dice-six'></i>";
+    }
 };
+
 var terning = document.getElementById("diceRoll");
 terning.onclick = function () {
     var result = roll.throw();
     moveIcons(result);
     showTiles();
-    showPrint(result);
+    showDice(result);
     winner(tile);
+    console.log(result);
 };
 
 //------------------------------- 4. Moving current icon and Removin previous icon -------------------------//

@@ -30,7 +30,5 @@ function draw() {
     ctx.fillText('You survived!', 75,250)
     ctx.font = '26px georgia, serif';
     ctx.fillText('Lets hope George R.R dont kill you later...', 10, 530)
-    
   };
-
 draw();
