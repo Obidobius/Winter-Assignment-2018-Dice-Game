@@ -174,6 +174,9 @@ function moveIcons(result) {
                 turn = 2
             }
         }
+        if(pDeath2 === true){
+            turn =1
+        }
     }
 };
             //---------------6. PLAYER TILE LOCATION TEXT--------------//
