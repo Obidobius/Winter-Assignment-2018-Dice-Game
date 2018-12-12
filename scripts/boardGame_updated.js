@@ -46,6 +46,9 @@ var roll = {
 //    dicePlacement.innerHTML = result;
 //};
 
+
+showDice(0);
+
 function showDice(result) {
     let show = document.getElementById("dicePlacement");
     switch (result) {
@@ -68,7 +71,7 @@ function showDice(result) {
             show.innerHTML = "<i class='fas fa-dice-six'></i>";
             break;
         default:
-            show.innerHTML = "<i class='fas fa-dice-six'></i>";
+            show.innerHTML = "<i class='fas fa-dice'></i>";
     }
 };
 
