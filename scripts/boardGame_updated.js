@@ -41,14 +41,8 @@ var roll = {
     }
 };
 
-//function showPrint(result) {
-//    var dicePlacement = document.getElementById("dicePlacement");
-//    dicePlacement.innerHTML = result;
-//};
-
-
+//Shows the Dice number with icons, Default shows onload.
 showDice(0);
-
 function showDice(result) {
     let show = document.getElementById("dicePlacement");
     switch (result) {
@@ -75,6 +69,7 @@ function showDice(result) {
     }
 };
 
+// When pressing the Roll button the other functions activate
 var terning = document.getElementById("diceRoll");
 terning.onclick = function () {
     var result = roll.throw();
@@ -162,13 +157,13 @@ function movePiece2() {
         if (tile2 === j) {
             let moves = document.getElementById(j);
             moves.innerHTML += '<img id="plr_2" class="[ selection__icon ]" src="icons/' + localStorage.getItem("Player_2_id") + '.png" />';
-            console.log(moves[j]);
+          console.log(moves[j]);
         }
     }
 };
 
 //-----------------5. TURNS----------------//
-//A function that switches between eah player turns.
+//A function that switches between each player turns.
 //Using the "if player not dead" statement from the permadeath trap to carry out the other actions until it turns true.
 function moveIcons(result) {
     if (pDeath1 && pDeath2) {
