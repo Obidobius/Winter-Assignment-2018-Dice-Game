@@ -292,6 +292,7 @@ p{
     }
    //---------------------------------------Move Tiles---------------------------------//
     &__boardPieceUp{
+        overflow: hidden;
         max-height: $boardHeight;
         background-image: url("../icons/roadUp.png");
         background-position: center;
@@ -303,6 +304,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceDown{
+        overflow: hidden;
         max-height: $boardHeight;
         background-image: url("../icons/roadDown.png");
         background-position: center;
@@ -314,6 +316,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceSide{
+        overflow: hidden;
         max-height: $boardHeight;
         background-image: url("../icons/roadSide.png");
         background-position: center;
@@ -325,6 +328,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceTurn{
+        overflow: hidden;
         max-height: $boardHeight;
         background-image: url("../icons/roadTurn.png");
         background-position: center;
@@ -336,6 +340,7 @@ p{
         border-radius: 10px;
     }
     &__boardPieceRight{
+        overflow: hidden;
         max-height: $boardHeight;
         background-image: url("../icons/roadRight.png");
         background-position: center;
@@ -354,6 +359,7 @@ p{
         max-height: $pieceHeight;
     }
     &__startPiece{
+        overflow: hidden;
         max-height: $boardHeight;
         background-image: url("../icons/roadStart.png");
         background-position: center;
@@ -365,6 +371,7 @@ p{
     }
     //---------------------------------------Goal---------------------------------//
     &__goalEnd{
+        overflow: hidden;
         background-image: url("../icons/goal_1.png");
         background-position: center;
         background-size: cover;

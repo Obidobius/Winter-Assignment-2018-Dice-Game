@@ -317,6 +317,7 @@ p {
 }
 
 .boardGame__boardPieceUp {
+  overflow: hidden;
   max-height: 120px;
   background-image: url("../icons/roadUp.png");
   background-position: center;
@@ -329,6 +330,7 @@ p {
 }
 
 .boardGame__boardPieceDown {
+  overflow: hidden;
   max-height: 120px;
   background-image: url("../icons/roadDown.png");
   background-position: center;
@@ -341,6 +343,7 @@ p {
 }
 
 .boardGame__boardPieceSide {
+  overflow: hidden;
   max-height: 120px;
   background-image: url("../icons/roadSide.png");
   background-position: center;
@@ -353,6 +356,7 @@ p {
 }
 
 .boardGame__boardPieceTurn {
+  overflow: hidden;
   max-height: 120px;
   background-image: url("../icons/roadTurn.png");
   background-position: center;
@@ -365,6 +369,7 @@ p {
 }
 
 .boardGame__boardPieceRight {
+  overflow: hidden;
   max-height: 120px;
   background-image: url("../icons/roadRight.png");
   background-position: center;
@@ -385,6 +390,7 @@ p {
 }
 
 .boardGame__startPiece {
+  overflow: hidden;
   max-height: 120px;
   background-image: url("../icons/roadStart.png");
   background-position: center;
@@ -396,6 +402,7 @@ p {
 }
 
 .boardGame__goalEnd {
+  overflow: hidden;
   background-image: url("../icons/goal_1.png");
   background-position: center;
   background-size: cover;
