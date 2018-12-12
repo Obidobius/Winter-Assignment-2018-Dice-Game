@@ -94,7 +94,7 @@ function movePiece() {
     if (traps.indexOf(tile) !== -1) {
         if (tile === 5) {
             tile = tile - 2;
-            alert("A Dire Wolf Appears, you moved back 2 steps");
+            alert("A Dire Wolf Appears, you got shit scared and have to moved back 2 steps");
         }
         else if (tile === 13) {
             tile = tile - 12;
@@ -106,7 +106,7 @@ function movePiece() {
         }
         else if (tile === 25) {
             tile = tile - 4;
-            alert("A rockslide triggers above you, you run back 4 tiles");
+            alert("A rockslide triggers above you, you sprint back 4 tiles");
         }
         else if (tile === 29) {
             tile = tile - 29;
@@ -118,7 +118,7 @@ function movePiece() {
         if (tile === i) {
             let moves = document.getElementById(i);
             moves.innerHTML += '<img id="plr_1" class="[ selection__icon ]" src="icons/' + localStorage.getItem("Player_1_id") + '.png" />';
-            console.log(moves[i]);
+            console.log(moves);
         }
     }
 };
@@ -133,7 +133,7 @@ function movePiece2() {
     if (traps.indexOf(tile2) !== -1) {
         if (tile2 === 5) {
             tile2 = tile2 - 2;
-            alert("A Dire Wolf Appears, you moved back 2 steps");
+            alert("A Dire Wolf Appears, you got shit scared and have to moved back 2 steps");
         }
         else if (tile2 === 13) {
             tile2 = tile2 - 12;
@@ -145,7 +145,7 @@ function movePiece2() {
         }
         else if (tile2 === 25) {
             tile2 = tile2 - 4;
-            alert("A rockslide triggers above you, you run back 4 tiles");
+            alert("A rockslide triggers above you, you sprint back 4 tiles");
         }
         else if (tile2 === 29) {
             tile2 = tile2 - 29;
@@ -157,7 +157,7 @@ function movePiece2() {
         if (tile2 === j) {
             let moves = document.getElementById(j);
             moves.innerHTML += '<img id="plr_2" class="[ selection__icon ]" src="icons/' + localStorage.getItem("Player_2_id") + '.png" />';
-          console.log(moves[j]);
+          console.log(moves);
         }
     }
 };
