@@ -170,6 +170,9 @@ function moveIcons(result) {
         alert("Wtf all players died from the white walkers");
         window.location.href = "allDead.html";
     }
+    if(turn === 1 && pDeath1) {
+        turn = 2;
+    }
     if (turn === 1) {
         for (let i = 0; i < result; i++) {
             tile = tile + 1;
