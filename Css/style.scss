@@ -123,6 +123,19 @@ p{
     }
 }
 
+
+#startButton:hover{
+    font-family: 'Playfair Display SC', serif;
+    background-color:darkred;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transform: scale(1.1);
+}
 //-----------------------------------ID TAGS----------------------------------------//
 #startButtonContainer{
     padding-bottom: 30px;
@@ -222,18 +235,6 @@ p{
 
 }
 
-#startButton:hover{
-        font-family: 'Playfair Display SC', serif;
-        background-color:darkred;
-        color: black;
-        text-align: center;
-        display: inline-block;
-        cursor: pointer;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        transform: scale(1.1);
-}
 
 #contains{
     padding-bottom: 10px;

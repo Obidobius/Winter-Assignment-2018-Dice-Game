@@ -16,23 +16,23 @@ var player2Name = localStorage.getItem('Player 2');
 document.getElementById('leftPlayerIcon1').innerHTML += '<p class="[ boardGame__plrOne ]">Player One</p>' + '<img class="[ selection__icon ]" src="icons/' + localStorage.getItem('Player_1_id') + '.png" />';
 document.getElementById('rightPlayerIcon2').innerHTML += '<p class ="[ boardGame__plrTwo ]">Player Two</p>' + '<img class="[ selection__icon ]" src="icons/' + localStorage.getItem('Player_2_id') + '.png" />';
 
-                                //-----------------1. VARIABLES-----------------//
+//-----------------1. VARIABLES-----------------//
 var turn = 1;   //Players Turn
 var tile = 1;   //Player 1
 var tile2 = 1;  //Player 2
 
-                            //----------------2. Players are dead or not------------//
+//----------------2. Players are dead or not------------//
 pDeath1 = false;
 pDeath2 = false;
-                
+
 var playerTile = document.getElementById(tile);     //Player 1 Tiles
 var playerTile2 = document.getElementById(tile);    //Player 2 Tiles
 
- //Get Player Icons from previous Page as moving pieces
+//Get Player Icons from previous Page as moving pieces
 playerTile.innerHTML = '<img id="plr_1" class="[ selection__icon ]" src="icons/' + localStorage.getItem("Player_1_id") + '.png" />';
 playerTile2.innerHTML = '<img id="plr_2" class="[ selection__icon ]" src="icons/' + localStorage.getItem("Player_2_id") + '.png" />';
 
-                //----------------------------------3. Dice system-----------------------------//
+//----------------------------------3. Dice system-----------------------------//
 var roll = {
     corners: 6,
     throw: function () {
@@ -85,8 +85,8 @@ terning.onclick = function () {
 //------------------------------- 4. Moving current icon and Removin previous icon -------------------------//
 
 //Trap tile Location
-var traps = [5, 13, 19, 25, 29]; 
-                                //-----------------4.1 Player 1-----------------//
+var traps = [5, 13, 19, 25, 29];
+//-----------------4.1 Player 1-----------------//
 // Trap Triggers
 function movePiece() {
     let previous_pos = document.getElementById("plr_1");
@@ -125,7 +125,7 @@ function movePiece() {
     }
 };
 
-                             //-----------------4.2 Player 2-----------------//
+//-----------------4.2 Player 2-----------------//
 // Trap Triggers     
 function movePiece2() {
     let previous_pos2 = document.getElementById("plr_2");
@@ -164,8 +164,9 @@ function movePiece2() {
     }
 };
 
-                         //-----------------5. TURNS----------------//
-
+//-----------------5. TURNS----------------//
+//A function that switches between eah player turns.
+//Using the "if player not dead" statement from the permadeath trap to carry out the other actions until it turns true.
 function moveIcons(result) {
     if (pDeath1 && pDeath2) {
         alert("Wtf all players died from the white walkers");
@@ -184,11 +185,11 @@ function moveIcons(result) {
                 turn = 1
             }
         }
-        if(pDeath1 === true){
-            turn =2
+        if (pDeath1 === true) {
+            turn = 2
         }
     }
-    //Player 2
+    //Player 2.
     else if (turn === 2) {
         for (let i = 0; i < result; i++) {
             tile2 = tile2 + 1;
@@ -202,12 +203,12 @@ function moveIcons(result) {
                 turn = 2
             }
         }
-        if(pDeath2 === true){
-            turn =1
+        if (pDeath2 === true) {
+            turn = 1
         }
     }
 };
-            //---------------6. PLAYER TILE LOCATION TEXT--------------//
+//---------------6. PLAYER TILE LOCATION TEXT--------------//
 function showTiles() {
     var inText = document.getElementById("battleText");
 
@@ -218,7 +219,7 @@ function showTiles() {
         inText.innerHTML = "Player 2 moved to tile: " + tile2;
     }
 };
-                //-----------------7. Direct Winner to new Page----------------//
+//-----------------7. Direct Winner to new Page----------------//
 function winner(result) {
     if (tile > 29) {
         localStorage.removeItem('Player_2_id');
